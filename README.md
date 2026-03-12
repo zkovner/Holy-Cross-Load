@@ -4,7 +4,7 @@ This is a simple script meant to find the difference in MW between what was sent
 
 ***Step 2:*** Download or Copy/Paste the python script. Change the first section where it is labeled to do so. 
 
-***Step 3:*** From webCalc, download a csv for the aggregates for each of [Actual Load, Solar, Purchase]. 
+***Step 3:*** From webCalc, download a csv for the aggregates for each of [Actual Load, Solar, WAPA, and Purchase]. 
 
 Run the python script with the paths updated. The script should output a plot.
 
