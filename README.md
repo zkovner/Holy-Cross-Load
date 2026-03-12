@@ -6,3 +6,5 @@ This is a simple script meant to find the difference in MW between what was sent
 
 The script should output an excel file with the differences in MW. 
 
+NOTE: Everything is in UTC to work around the webCalc and Tagger issues with timezones. Make adjustments as needed. 
+
