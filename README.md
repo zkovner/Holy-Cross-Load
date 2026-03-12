@@ -4,7 +4,7 @@ This is a simple script meant to find the difference in MW between what was sent
 
 ***Step 2:*** Download or Copy/Paste the python script. Change the first section where it is labeled to do so. 
 
-***Step 3:*** From webCalc, download a csv for the aggregates for each of [Actual Load, Solar, WAPA, and HCE_Purchases]. To do this, click on the filters and set range to monthly. In object name, put the items in the list (one at a time). Export the result as a csv.
+***Step 3:*** From webCalc, download a csv for the aggregates for each of [Actual Load, Solar, WAPA, and HCE_Purchases]. To do this, click on the filters and set range to monthly. In object name, put the items in the list (one at a time). Export the result as a csv. TIME ZONES MUST BE UTC (or GMT)
 
 Run the python script with the paths updated. The script should output a plot.
 
