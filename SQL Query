@@ -3,7 +3,9 @@ FROM (
     SELECT TagCode, OperatingDT, Interval, MAX(MW) AS MW
     FROM Tagging_ETAG.dbo.TagHourProfileETAGView
     WHERE SinkPoint_ETAG = 'HCEA'
-    AND OperatingDT >= '2026-03-01'
+	--AND SourcePoint_ETAG = 'HCE.BRPL2'
+	--AND SourcePoint_ETAG = 'GV_Hydro'
+    AND '2026-03-01' <= OperatingDT AND OperatingDT <= '2026-03-11'
     GROUP BY TagCode, OperatingDT, Interval
 ) deduped
 GROUP BY OperatingDT, Interval
