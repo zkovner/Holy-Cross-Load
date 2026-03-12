@@ -1,6 +1,6 @@
-This is a simple script meant to find the difference in MW between what was sent to Holy Cross and what the Actual Load was. Follow to steps below to reproduce:
+This is a script meant to visually depict resource flow to Holy Cross.
 
-***Step 1:*** Copy/Paste the SQL file into a new query in the sqltrading server. Run the query and save the result as a csv for both Bronco and GV Hydro by un-commenting those lines. 
+***Step 1:*** Copy/Paste the SQL file into a new query in the sqltrading server. Run the query and save the result as a csv for both Bronco and GV Hydro by un-commenting those lines. Make sure to update the OperatingDT range to the desired range.
 
 ***Step 2:*** Download or Copy/Paste the python script. Change the first section where it is labeled to do so. 
 
