@@ -1,0 +1,10 @@
+SELECT OperatingDT, Interval, SUM(MW) AS TotalMW
+FROM (
+    SELECT TagCode, OperatingDT, Interval, MAX(MW) AS MW
+    FROM Tagging_ETAG.dbo.TagHourProfileETAGView
+    WHERE SinkPoint_ETAG = 'HCEA'
+    AND OperatingDT >= '2026-03-01'
+    GROUP BY TagCode, OperatingDT, Interval
+) deduped
+GROUP BY OperatingDT, Interval
+ORDER BY OperatingDT, Interval
