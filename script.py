@@ -43,8 +43,8 @@ dfActual = dfActual.loc[startDate:endDate]
 # FINAL SOLUTION AND EXPORT
 # ==============================
 MW_Delivered = dfCalc.add(dfTagger)
-Diff = (MW_Delivered.subtract(dfActual)).abs().round(0)
+Diff = (MW_Delivered.subtract(dfActual)).round(0)
 Diff.columns = [f'HE {col}' for col in Diff.columns]
-
 Diff.to_excel('HCE_MW_Diff.xlsx')
+print("Excel File Created Successfully")
 
